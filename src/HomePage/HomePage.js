@@ -6,7 +6,7 @@ import { pie, arc } from "d3-shape";
 import { scaleOrdinal } from "d3-scale";
 
 function HomePage() {
-  var datad3 = {};
+  var d3Data = {};
   const [chartjsdata, dataSource] = useState({});
   var Labels = [];
   var Data = [];
@@ -34,7 +34,7 @@ function HomePage() {
       for (var i = 0; i < res.data.myBudget.length; i++) {
         Data[i] = res.data.myBudget[i].budget;
         Labels[i] = res.data.myBudget[i].title;
-        datad3[res.data.myBudget[i].title] = res.data.myBudget[i].budget;
+        d3Data[res.data.myBudget[i].title] = res.data.myBudget[i].budget;
       }
       dataSource({
         datasets: [
@@ -45,7 +45,7 @@ function HomePage() {
         ],
         labels: Labels,
       });
-      created3(datad3);
+      created3(d3Data);
     });
   };
 
@@ -196,6 +196,9 @@ function HomePage() {
             accounted for.
           </p>
         </article>
+
+        <hr />
+        <br />
 
         <h1>ChartJs</h1>
         <div

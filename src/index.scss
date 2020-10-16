@@ -8,7 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
+html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -174,7 +174,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -184,7 +185,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -348,15 +350,6 @@ template {
   display: none;
 }
 
-
-
-
-
-
-
-
-
-
 * {
   box-sizing: border-box;
 }
@@ -381,7 +374,7 @@ nav {
 nav ul,
 nav ul li {
   margin: 0;
-  padding: 0 ;
+  padding: 0;
   list-style: none;
   display: inline-block;
 }
@@ -396,13 +389,12 @@ nav ul li a {
   margin: 0;
 }
 
-nav ul li a:hover  {
+nav ul li a:hover {
   background-color: white;
   color: #4d5791;
 }
 
-
-section{
+section {
   text-align: center;
   font-size: 12px;
 }
@@ -415,7 +407,7 @@ aside {
   font-style: italic;
   background-color: lightgray;
 }
-button{
+button {
   height: 34px;
   width: 66px;
 }
@@ -430,7 +422,7 @@ div.menu {
 div.menu ul,
 div.menu ul li {
   margin: 0;
-  padding: 0 ;
+  padding: 0;
   list-style: none;
   display: inline-block;
 }
@@ -445,7 +437,7 @@ div.menu ul li a {
   margin: 0;
 }
 
-div.menu ul li a:hover  {
+div.menu ul li a:hover {
   background-color: white;
   color: #4d5791;
 }
@@ -453,7 +445,7 @@ div.menu ul li a:hover  {
 div.hero {
   height: 350px;
   background-color: #b4c6f0;
-  background-image: url('/bg.png');
+  background-image: url("/bg.png");
   background-size: 400px;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -514,6 +506,6 @@ main article {
 
 @media screen and (min-width: 768px) {
   .container .div.text-box {
-      margin: 10px;
+    margin: 10px;
   }
 }
